@@ -11,8 +11,10 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <BrowserRouter>
-          <Link to="/">Home</Link><br/>
-          <Link to="/women">Women</Link>
+        <ul>
+         <li> <Link to="/">Home</Link></li><br/>
+          <li><Link to="/women">Women</Link></li>
+          </ul>
         <Routes>
           <Route path="/" element={<Home/>}/>
            <Route path="/women/*" element={<Women/>}/>
